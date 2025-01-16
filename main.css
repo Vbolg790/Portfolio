@@ -33,13 +33,14 @@ nav a:hover {
   font-size: 25px;
 }
 
-#introduction {
+#introduction,
+#aboutSection {
   color: var(--maincolor);
   padding-left: 50px;
   padding-top: 50px;
 }
 
-h1 {
+#introduction h1 {
   font-size: 65px;
   font-weight: 400;
   margin: 0;
@@ -54,7 +55,8 @@ h1 {
   font-size: 30px;
 }
 
-#introduction p {
+#introduction p,
+#aboutSection p {
   font-size: 20px;
 }
 
@@ -73,7 +75,8 @@ h1 {
   width: 50px;
 }
 
-#introduction hr {
+#introduction hr,
+#aboutSection hr {
   width: 50%;
   height: 3px;
   background-color: var(--secondarycolor);
@@ -130,4 +133,15 @@ h1 {
   filter: drop-shadow(#60504f 10px 10px 10px);
   z-index: 100;
   width: 22%;
+}
+
+#aboutSection h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--maincolor);
+}
+
+#aboutSection p {
+  max-width: 50%;
 }

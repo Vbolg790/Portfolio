@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Rosario&display=swap");
+
+:root {
+  --maincolor: #691b16;
+  --secondarycolor: #8b566d;
+  /* tan: #FFFCF6 */
+}
+
+body {
+  background-color: #fef9ef;
+  font-family: "Rosario", sans-serif;
+}
+
+nav {
+  margin-right: 50px;
+  font-family: "Rosario", sans-serif;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--maincolor);
+  font-size: 30px;
+  padding: 10px;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#introduction {
+  color: var(--maincolor);
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--maincolor);
+}
+
+#introduction h2 {
+  color: var(--secondarycolor);
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#iconLinks img {
+  width: 40px;
+  padding: 20px;
+}
+
+#linkedinIcon,
+#githubIcon,
+#mailIcon {
+  transition: width 0.5s ease, filter 0.5s ease;
+}
+
+#iconLinks img:hover {
+  width: 50px;
+}
+
+#photos img {
+  border-radius: 3%;
+  border: #fffcf6 solid 5px;
+  margin-top: 80px;
+}
+
+#devFestPhoto {
+  width: 30%;
+  position: absolute;
+  top: 80px;
+  right: 220px;
+  transition: width 0.5s ease, filter 0.5s ease;
+}
+
+#devFest p,
+#profile p,
+#medal p {
+  font-family: "Rosario", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  color: var(--maincolor);
+  background-color: #fef9ef;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+#devFest p {
+  position: absolute;
+  top: 100px;
+  right: 600px;
+}
+#profile p {
+  position: absolute;
+  top: 350px;
+  right: 380px;
+}
+#medal p {
+  position: absolute;
+  top: 550px;
+  right: 650px;
+}
+
+#vikProfilePhoto {
+  width: 25%;
+  position: absolute;
+  top: 380px;
+  right: 60px;
+  transform: rotate(18deg);
+  transition: width 0.5s ease, filter 0.5s ease;
+}
+
+#medalPhoto {
+  width: 20%;
+  position: absolute;
+  top: 520px;
+  right: 390px;
+  transform: rotate(-16deg);
+  transition: width 0.5s ease, filter 0.5s ease;
+}
+
+#devFestPhoto:hover {
+  filter: drop-shadow(#60504f 10px 10px 10px);
+  z-index: 100;
+  width: 32%;
+}
+
+#vikProfilePhoto:hover {
+  filter: drop-shadow(#60504f 10px 10px 10px);
+  z-index: 100;
+  width: 27%;
+}
+
+#medalPhoto:hover {
+  filter: drop-shadow(#60504f 10px 10px 10px);
+  z-index: 100;
+  width: 22%;
+}

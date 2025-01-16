@@ -14,21 +14,23 @@ body {
 nav {
   margin-right: 50px;
   font-family: "Rosario", sans-serif;
-  font-size: 10px;
-  display: flex;
-  flex-direction: row-reverse;
+  position: absolute;
+  right: 0;
+  padding: 30px;
 }
 
 nav a {
   text-decoration: none;
   color: var(--maincolor);
-  font-size: 30px;
+  font-size: 20px;
   padding: 10px;
   padding-right: 10px;
+  transition: 0.5s ease;
 }
 
 nav a:hover {
   text-decoration: underline;
+  font-size: 25px;
 }
 
 #introduction {
@@ -38,7 +40,7 @@ nav a:hover {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 65px;
   font-weight: 400;
   margin: 0;
   color: var(--maincolor);
@@ -49,6 +51,11 @@ h1 {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 30px;
+  font-size: 30px;
+}
+
+#introduction p {
+  font-size: 20px;
 }
 
 #iconLinks img {
@@ -66,10 +73,19 @@ h1 {
   width: 50px;
 }
 
+#introduction hr {
+  width: 50%;
+  height: 3px;
+  background-color: var(--secondarycolor);
+  border: none;
+  margin: 20px 0;
+  text-align: left;
+}
+
 #photos img {
   border-radius: 3%;
   border: #fffcf6 solid 5px;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 #devFestPhoto {
@@ -78,34 +94,6 @@ h1 {
   top: 80px;
   right: 220px;
   transition: width 0.5s ease, filter 0.5s ease;
-}
-
-#devFest p,
-#profile p,
-#medal p {
-  font-family: "Rosario", sans-serif;
-  font-size: 20px;
-  padding: 20px;
-  color: var(--maincolor);
-  background-color: #fef9ef;
-  z-index: 100;
-  border-radius: 5px;
-}
-
-#devFest p {
-  position: absolute;
-  top: 100px;
-  right: 600px;
-}
-#profile p {
-  position: absolute;
-  top: 350px;
-  right: 380px;
-}
-#medal p {
-  position: absolute;
-  top: 550px;
-  right: 650px;
 }
 
 #vikProfilePhoto {

@@ -22,7 +22,7 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--maincolor);
-  font-size: 20px;
+  font-size: max(1.2vw, 12px);
   padding: 10px;
   padding-right: 10px;
   transition: 0.5s ease;
@@ -30,18 +30,23 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  font-size: 25px;
+  font-size: max(1.4vw, 14px);
 }
 
-#introduction,
-#aboutSection {
+#introduction {
   color: var(--maincolor);
-  padding-left: 50px;
-  padding-top: 50px;
+  padding-left: 3vw;
+  padding-top: 3vw;
+}
+
+#aboutSection, #projectsSection, #blogSection, #contactSection {
+  color: var(--maincolor);
+  padding-left: 3vw;
+  padding-top: 1vw;
 }
 
 #introduction h1 {
-  font-size: 65px;
+  font-size: max(2.5vw, 25px);
   font-weight: 400;
   margin: 0;
   color: var(--maincolor);
@@ -52,16 +57,17 @@ nav a:hover {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: max(1.8vw, 18px);
 }
 
 #introduction p,
-#aboutSection p {
-  font-size: 20px;
+#aboutSection p, #projectsSection p, #blogSection p, #contactSection p {
+  font-size: max(1.1vw, 11px);
 }
 
 #iconLinks img {
-  width: 40px;
+  width: 3%;
+  min-width: 30px;
   padding: 20px;
 }
 
@@ -76,9 +82,10 @@ nav a:hover {
 }
 
 #introduction hr,
-#aboutSection hr {
+#aboutSection hr,
+#projectsSection hr, #blogSection hr {
   width: 50%;
-  height: 3px;
+  height: 2px;
   background-color: var(--secondarycolor);
   border: none;
   margin: 20px 0;
@@ -92,27 +99,27 @@ nav a:hover {
 }
 
 #devFestPhoto {
-  width: 30%;
+  width: 360px;
   position: absolute;
   top: 80px;
-  right: 220px;
+  right: 150px;
   transition: width 0.5s ease, filter 0.5s ease;
 }
 
 #vikProfilePhoto {
-  width: 25%;
+  width: 300px;
   position: absolute;
-  top: 380px;
-  right: 60px;
+  top: 300px;
+  right: 10px;
   transform: rotate(18deg);
   transition: width 0.5s ease, filter 0.5s ease;
 }
 
 #medalPhoto {
-  width: 20%;
+  width: 230px;
   position: absolute;
-  top: 520px;
-  right: 390px;
+  top: 420px;
+  right: 300px;
   transform: rotate(-16deg);
   transition: width 0.5s ease, filter 0.5s ease;
 }
@@ -120,23 +127,23 @@ nav a:hover {
 #devFestPhoto:hover {
   filter: drop-shadow(#60504f 10px 10px 10px);
   z-index: 100;
-  width: 32%;
+  width: 380px;
 }
 
 #vikProfilePhoto:hover {
   filter: drop-shadow(#60504f 10px 10px 10px);
   z-index: 100;
-  width: 27%;
+  width: 320px;
 }
 
 #medalPhoto:hover {
   filter: drop-shadow(#60504f 10px 10px 10px);
   z-index: 100;
-  width: 22%;
+  width: 250px;
 }
 
-#aboutSection h1 {
-  font-size: 50px;
+#aboutSection h1, #projectsSection h1, #blogSection h1, #contactSection h1 {
+  font-size: max(2.5vw, 25px);
   font-weight: 400;
   margin: 0;
   color: var(--maincolor);
@@ -144,4 +151,101 @@ nav a:hover {
 
 #aboutSection p {
   max-width: 50%;
+  font-size: max(1.1vw, 11px);
+}
+
+@media screen and (max-width: 1187px) {
+  #devFestPhoto {
+    width: 25%;
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+
+  #vikProfilePhoto {
+    width: 23%;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    /* transform: rotate(18deg); */
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+  
+  #medalPhoto {
+    width: 21%;
+    position: absolute;
+    top: 300px;
+    right: 200px;
+    /* transform: rotate(-16deg); */
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #devFestPhoto {
+    display: none;
+    width: 20%;
+    position: absolute;
+    top: 100px;
+    right: 90px;
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+
+  #vikProfilePhoto {
+    display: none;
+    width: 20%;
+    position: absolute;
+    top: 290px;
+    right: 90px;
+    transform: rotate(0deg);
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+  
+  #medalPhoto {
+    display: none;
+    width: 20%;
+    position: absolute;
+    top: 480px;
+    right: 90px;
+    transform: rotate(0deg);
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+
+  #introduction hr,
+  #aboutSection hr, #projectsSection hr, #blogSection hr {
+  width: 90%;
+  height: 2px;
+  background-color: var(--secondarycolor);
+  border: none;
+  margin: 20px 0;
+  text-align: left;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+  #devFestPhoto {
+    display: none;
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+
+  #vikProfilePhoto {
+    display: none;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(0deg);
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+  
+  #medalPhoto {
+    display: none;
+    transition: width 0.5s ease, filter 0.5s ease;
+  }
+
+nav {
+  display: none;
+}
 }

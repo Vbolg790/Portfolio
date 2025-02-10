@@ -6,6 +6,12 @@
   /* tan: #FFFCF6 */
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   background-color: #fef9ef;
   font-family: "Rosario", sans-serif;
@@ -39,7 +45,10 @@ nav a:hover {
   padding-top: 3vw;
 }
 
-#aboutSection, #projectsSection, #blogSection, #contactSection {
+#aboutSection,
+#projectsSection,
+#blogSection,
+#contactSection {
   color: var(--maincolor);
   padding-left: 3vw;
   padding-top: 1vw;
@@ -61,7 +70,10 @@ nav a:hover {
 }
 
 #introduction p,
-#aboutSection p, #projectsSection p, #blogSection p, #contactSection p {
+#aboutSection p,
+#projectsSection p,
+#blogSection p,
+#contactSection p {
   font-size: max(1.1vw, 11px);
 }
 
@@ -83,7 +95,8 @@ nav a:hover {
 
 #introduction hr,
 #aboutSection hr,
-#projectsSection hr, #blogSection hr {
+#projectsSection hr,
+#blogSection hr {
   width: 50%;
   height: 2px;
   background-color: var(--secondarycolor);
@@ -142,7 +155,10 @@ nav a:hover {
   width: 250px;
 }
 
-#aboutSection h1, #projectsSection h1, #blogSection h1, #contactSection h1 {
+#aboutSection h1,
+#projectsSection h1,
+#blogSection h1,
+#contactSection h1 {
   font-size: max(2.5vw, 25px);
   font-weight: 400;
   margin: 0;
@@ -171,7 +187,7 @@ nav a:hover {
     /* transform: rotate(18deg); */
     transition: width 0.5s ease, filter 0.5s ease;
   }
-  
+
   #medalPhoto {
     width: 21%;
     position: absolute;
@@ -201,7 +217,7 @@ nav a:hover {
     transform: rotate(0deg);
     transition: width 0.5s ease, filter 0.5s ease;
   }
-  
+
   #medalPhoto {
     display: none;
     width: 20%;
@@ -213,15 +229,16 @@ nav a:hover {
   }
 
   #introduction hr,
-  #aboutSection hr, #projectsSection hr, #blogSection hr {
-  width: 90%;
-  height: 2px;
-  background-color: var(--secondarycolor);
-  border: none;
-  margin: 20px 0;
-  text-align: left;
-}
-
+  #aboutSection hr,
+  #projectsSection hr,
+  #blogSection hr {
+    width: 90%;
+    height: 2px;
+    background-color: var(--secondarycolor);
+    border: none;
+    margin: 20px 0;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -239,13 +256,13 @@ nav a:hover {
     transform: rotate(0deg);
     transition: width 0.5s ease, filter 0.5s ease;
   }
-  
+
   #medalPhoto {
     display: none;
     transition: width 0.5s ease, filter 0.5s ease;
   }
 
-nav {
-  display: none;
-}
+  nav {
+    display: none;
+  }
 }

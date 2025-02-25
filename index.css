@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rosario&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Pixelify+Sans:wght@400..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 
 :root {
   --maincolor: #691b16;
@@ -14,12 +15,12 @@ body {
 
 body {
   background-color: #fef9ef;
-  font-family: "Rosario", sans-serif;
+  font-family: "Zain", sans-serif;
 }
 
 nav {
   margin-right: 50px;
-  font-family: "Rosario", sans-serif;
+  font-family: "Zain", sans-serif;
   position: absolute;
   right: 0;
   padding: 30px;
@@ -28,7 +29,7 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--maincolor);
-  font-size: max(1.2vw, 12px);
+  font-size: max(1.5vw, 12px);
   padding: 10px;
   padding-right: 10px;
   transition: 0.5s ease;
@@ -36,7 +37,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  font-size: max(1.4vw, 14px);
+  font-size: max(1.8vw, 14px);
 }
 
 #introduction {
@@ -55,7 +56,7 @@ nav a:hover {
 }
 
 #introduction h1 {
-  font-size: max(2.5vw, 25px);
+  font-size: max(3.5vw, 35px);
   font-weight: 400;
   margin: 0;
   color: var(--maincolor);
@@ -66,7 +67,7 @@ nav a:hover {
   font-weight: 400;
   margin-top: 10px;
   margin-bottom: 30px;
-  font-size: max(1.8vw, 14px);
+  font-size: max(2vw, 24px);
 }
 
 #introduction p,
@@ -74,7 +75,7 @@ nav a:hover {
 #projectsSection p,
 #blogSection p,
 #contactSection p {
-  font-size: max(1.1vw, 11px);
+  font-size: max(1.3vw, 18px);
 }
 
 #iconLinks img {
@@ -159,15 +160,10 @@ nav a:hover {
 #projectsSection h1,
 #blogSection h1,
 #contactSection h1 {
-  font-size: max(2.5vw, 25px);
+  font-size: max(2.5vw, 30px);
   font-weight: 400;
   margin: 0;
   color: var(--maincolor);
-}
-
-#aboutSection p {
-  max-width: 50%;
-  font-size: max(1.1vw, 11px);
 }
 
 @media screen and (max-width: 1187px) {
@@ -264,5 +260,30 @@ nav a:hover {
 
   nav {
     display: none;
+  }
+
+  #introduction,
+  #aboutSection,
+  #projectsSection,
+  #blogSection,
+  #contactSection {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  #introduction hr,
+  #aboutSection hr,
+  #projectsSection hr,
+  #blogSection hr,
+  #contactSection hr {
+    width: 90%;
+    height: 2px;
+    background-color: var(--secondarycolor);
+    border: none;
+    margin: 20px auto;
   }
 }
